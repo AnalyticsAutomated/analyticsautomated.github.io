@@ -71,6 +71,14 @@ img.grayscale {
   text-align:center;
 }
 
+.faq {
+  vertical-align: middle;
+  width:100%;
+  padding-top:4%;
+  height: 100%;
+}
+
+
 .header .btn-lg {
    font-size:28px;
    border-color:#354458;
@@ -106,7 +114,6 @@ img.grayscale {
 .header h1 {
   font-size:80px;
   -webkit-text-stroke: 1px rgba(f,f,f,0.1);
-  color:#431a6d;
   color:#354458;
   margin-left:-5px;
   margin-bottom:5px;
@@ -152,6 +159,18 @@ img.grayscale {
 .blurb .panel {
   background-color:transparent;
 }
+
+.faq_blurb {
+  padding: 120px 0;
+  color:#354458;
+  background: #e9e0d6 url('../images/pt_topo_l.png') repeat center center fixed;
+}
+
+.faq_blurb .panel {
+  background-color:transparent;
+}
+
+
 
 .bright {
   background: #dbdbdb url('../images/pt_topo.png') repeat center center fixed;

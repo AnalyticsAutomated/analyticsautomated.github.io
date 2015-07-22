@@ -18,7 +18,7 @@
 <div class="navbar navbar-fixed-top alt" data-spy="affix" data-offset-top="1000">
   <div class="container">
     <div class="navbar-header">
-      <a href="#" class="navbar-brand">Home</a>
+      <a href="index.html" class="navbar-brand">Home</a>
       <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -27,9 +27,9 @@
     </div>
     <div class="navbar-collapse collapse" id="navbar">
       <ul class="nav navbar-nav">
-        <li><a href="#sec1">What</a></li>
-        <li><a href="#sec2">How</a></li>
-        <li><a href="#sec3">Download</a></li>
+        <li><a href="index.html#sec1">What</a></li>
+        <li><a href="index.html#sec2">How</a></li>
+        <li><a href="index.html#sec3">Download</a></li>
         <li><a href="documentation.html">Documentation</a></li>
         <li><a href="faq.html">FAQ</a></li>
       </ul>
@@ -37,131 +37,96 @@
    </div>
 </div>
 
-<div class="header alt vert">
+<div class="faq_blurb">
   <div class="container">
+    <h1>FAQ</h1>
+		<ul class="list-unstyled">
+  		<li><h3>What is this?</h3>
+				<p>Analytics Automated, A_A, is a
+				<a href="https://www.python.org/download/releases/3.0/">Python</a>/
+				<a href="https://www.djangoproject.com/">Django</a> application which
+				allows you to turn computer software into RESTful webservices simply by
+				configuring a web application. It is designed principally to allow
+				users to make predictions with statistical models but it can be
+				configured to run any software at all.</p>
+			</li>
+			<li><h3>Why would I want to do this?</h3>
+				<p>Operationalising statistical models and Data Science research is
+				hard this framework simplifies this process. In fact you could turn
+				any piece of software in to a remote service users could call, even
+				<code>rm -rf *</code> (we don't advise you do this)</p>
+			</li>
+			<li><h3>Any other reason?</h3>
+				<p>Technology lock-in is common in organisations. A_A lets you build
+				models and data analysis pipelines for across different data
+				analysis technologies. This leaves your organisation free to hire
+				the best talent without having to bet the farm on which of today's
+				new hot Data Science technologies will still be around in a year's
+				time.</p>
+			</li>
+			<li><h3>Is it complicated?</h3>
+				<p>A_A should be easy to understand for anyone with a reasonable
+				knowledge of <a href="https://www.python.org/download/releases/3.0/">Python</a>
+				and a passing knowledge of <a href="https://www.djangoproject.com/">Django</a>. Set up is
+				somewhat involved but once this is done configuring new services should
+				be straightforward.</p>
+			</li>
+			<li><h3>What do I need to know</h3>
+				<p>You should know
+					<a href="https://www.python.org/download/releases/3.0/">Python</a>.
+					You should also be familiar with <a href="https://www.djangoproject.com/">Django</a>.
+					A passing knowledge of <a href="http://www.celeryproject.org/">Celery</a>
+					and <a href="https://www.rabbitmq.com/">RabbitMQ</a> would not hurt either.
+					We're not going to pretend this is a solution to instant and automatic
+					Data Science success.</p>
+			</li>
+			<li><h3>Which analytics and modelling software are supported?</h3>
+				<p>So far anything that can run on a standard unix commandline
+				can be turned in to a service. As new backends are added to the
+				<a href="https://pypi.python.org/pypi/commandRunner">commandRunner python package</a>
+				we'll add those to A_A. In the next month	or so we'll be adding	Grid
+				Engine and <a href="https://www.r-project.org/">R</a> (via
+				<a href="https://rforge.net/Rserve/">RServe</a>)</p>
+			</li>
+			<li><h3>What about my pet modelling software</h3>
+				<p>We plan to add <a href="https://hadoop.apache.org/">Hadoop</a>,
+					<a href="https://www.gnu.org/software/octave/">Octave</a>,
+					<a href="http://uk.mathworks.com/">Matlab</a> and
+					<a href="https://www.wolfram.com/mathematica/">Mathematica</a> support. We'd love to also
+				add support for <a href="">SAS Enterprise Server. Anything else is not currently
+				on the roadmap. If you'd like to add support please consider forking
+				the <a href="ttps://pypi.python.org/pypi/commandRunner">commandRunner</a> code base and adding the appropriate class.</p>
+			</li>
+			<li><h3>Why Python?</h3>
+				<p>Python has emerged as the de-facto scripting language for Data
+					 Science and research coding. We'd like this framework to be easily
+					understood and adopted by these communities.</p>
+			</li>
+			<li><h3>Your Python code sucks</h3>
+				<p>That's not really a question but yeah, this is the first production
+				Python application we've built. We'll clean it up as we go but we'd
+				love the code to be better please do fork the github repository and
+				help us out. The tests could really	do with some TLC.</p>
+			</li>
+			<li><h3>I'm an academic do I need to cite this?</h3>
+				<p>Yes you do. For now please use the webaddress for the project as<br />
+				<code>D.Buchan, 2015. https://analyticsautomated.github.io/</code></p>
+			</li>
 
-    <h1>Analytics Automated</h1>
-      <p class="lead">Simple automation for Data Science</p>
-      <p class="lead_para">A lightweight framework for automating long-running, distributed computation focused on Data Science applications.</p>
-      <div>&nbsp;</div>
-      <a href="documentation.html" class="btn btn-default btn-lg">Documentation</a>
-      <a href="#sec3" class="btn btn-default btn-lg">Download</a>
+		</ul>
   </div>
 </div>
 
 <hr>
-
-<div id="sec1" class="blurb">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7">
-        <h1>What</h1><p class="lead">Analytics automated, A_A,
-          streamlines the process of turning your predictive models into
-          usable and maintainable web services services.</p>
-
-          <p>It is trivially easy for Scientists, Researchers, Data
-           Scientists and Analysts to build statistical and predictive models.
-           More often than not these fail to be turned in to useful and usable
-           services; frequently becoming work which does not get actioned
-           futher. In short, organisations often have trouble operationalising
-           the models and insights which emerge from complex statistical
-           research and data science.</p>
-
-          <p>With A_A Researchers and data scientists can build models in the
-            modelling tool of their choice and then, with trivial configuration,
-            A_A will turn these models in to an easy to use API
-            for integration in to websites and other tools.</p>
-
-          <p class="lead">A_A is agnostic to the modeling software and technologies you
-            choose to build your group around.</p>
-
-            <p>A_A is designed to minimise technology lock-in. Statistical
-              modelling and Data Science expertise is now spread
-              across a wide range of technologies (Hadoop, SAS, R and many more)
-              and such technological proliferation shows no sign of slowing
-              down. Picking a single modeling technology greatly reduces the
-              pool of possible employees for your organisation and backing
-              the "wrong horse" means if you have to change it can be very
-              costly in terms of time, staffing and money.</p>
-
-      </div>
-      <div class="col-md-5">
-        <h1 class="pull-right"><i class="icon-code-fork icon-3x"></i> <i class="icon-cogs icon-3x"></i> <i class="icon-bar-chart icon-3x"></i></h1>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="featurette" id="sec2">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h1>How</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2 col-md-offset-2 text-center">
-        <div class="featurette-item">
-          <i class="icon-bar-chart"></i>
-          <h4>Model</h4>
-          <p>Build your statistical models in the modelling software of your
-            choice</p>
-        </div>
-      </div>
-      <div class="col-md-2 text-center">
-        <div class="featurette-item">
-          <i class="icon-download-alt"></i>
-          <h4>Install Dependencies</h4>
-          <p>Python3, RabbitMQ, PostgreSQL and Django</p>
-        </div>
-      </div>
-      <div class="col-md-2 text-center">
-        <div class="featurette-item">
-          <i class="icon-github-sign"></i>
-          <h4>Download A_A</h4>
-          <p>Clone the github repo for Analytics Automated</p>
-        </div>
-      </div>
-      <div class="col-md-2 text-center">
-        <div class="featurette-item">
-          <i class="icon-sitemap"></i>
-          <h4>Configure</h4>
-          <p>...and you're done!</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="callout" id="sec3">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7">
-        <h1>Download</h1><p class="lead">You can download A_A by cloning the
-        github repository.</p>
-        <p>A_A has a large number of dependencies we strongly advise you <a href="">read the docs</a>
-          before you get going.</p>
-        <code>git clone https://github.com/AnalyticsAutomated/analytics_automated.git</code>
-        <br /><br />
-        <p>Alternatively visit the repository, make a fork and help us out!</p>
-        <code><a href="https://github.com/AnalyticsAutomated/analytics_automated">https://github.com/AnalyticsAutomated/analytics_automated</a></code>
-      </div>
-      <div class="col-md-5">
-        <h1 class="pull-right"><i class="icon-download-alt icon-3x"></i> <i class="icon-github-sign icon-3x"></i></h1>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 <footer>
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3 text-center">
         <p class="lead">A_A is an Open Source project which is funded in part by the</p>
-        <p><img src="static/images/bbsrc.jpg"></p>
+        <p><a href="http://www.bbsrc.ac.uk/"><img src="static/images/bbsrc.jpg"></a></p>
         <hr>
-        <p>Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a>.<br>Company ©2014</p>
+        <p>Template by <i class="fa fa-heart-o"></i> at <a href="http://www.bootply.com">Bootply</a>.<br></p>
       </div>
     </div>
   </div>
