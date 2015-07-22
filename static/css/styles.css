@@ -89,16 +89,16 @@ img.grayscale {
 }
 
 .navbar-bold.affix {
-  background-color:#d46054;
+  background-color:#eb7260;
 }
 
 .navbar-bold {
-  background-color:#f68076;
+  background-color:#eb7260;
   font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 .navbar-bold li a:hover, .navbar-bold li.active {
-  background-color:#d46054;
+  background-color:#eb7260;
 }
 
 
@@ -113,7 +113,7 @@ img.grayscale {
 }
 
 .header .lead {
-  color:#d46054;
+  color:#eb7260;
   font-size:25px;
 }
 
@@ -136,7 +136,7 @@ img.grayscale {
 }
 
 .alt.affix {
-  background-color:#4C06AB;
+  background-color:#e9e0d6;
 }
 
 .alt li a:hover, .alt li.active {
@@ -153,12 +153,12 @@ img.grayscale {
 }
 
 .bright {
-  background: #dbdbdb url('static/images/pt_topo.png') repeat center center fixed;
+  background: #dbdbdb url('../images/pt_topo.png') repeat center center fixed;
   color:#777;
 }
 
 .featurette {
-  background: #222334;
+  background: #3a9ad9;
   padding: 50px 0;
   color: #ffffff;
 }
