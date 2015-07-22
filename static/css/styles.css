@@ -5,7 +5,7 @@
   font-family: 'Voltaire';
   font-style: normal;
   font-weight: 400;
-  src: local('Voltaire'), url('../font/Bcdym-dNGztfenGzlRsZ3_esZW2xOQ-xsNqO47m55DA.woff2') format('woff2'), url('../font/ag0Q3_6hjQFerbCN2Eewq_esZW2xOQ-xsNqO47m55DA.woff') format('woff');
+  src: local('Voltaire'), url('../fonts/Bcdym-dNGztfenGzlRsZ3_esZW2xOQ-xsNqO47m55DA.woff2') format('woff2'), url('../fonts/ag0Q3_6hjQFerbCN2Eewq_esZW2xOQ-xsNqO47m55DA.woff') format('woff');
 }
 
 /* Dark Blue   #354458
